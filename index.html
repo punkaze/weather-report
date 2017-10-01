@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="report.js"></script>
+    <link rel="shortcut icon" href="weatherlogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="box">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="gallery">
+                            <img src="weatherlogo.png" alt="wlogo" width="200" height="200">
+                        </div>
+                        <p></p>
+                        <h3 class="card-title"><b>WEATHER REPORT</b></h3>
+                        <p class="card-text">We are a great destination for weather on a county-by-county basis in the world. Type in your city
+                            or your state, and you'll get a detailed forecast for where you want to know, or alternatively,
+                            where you're headed out to. <br><q><i>ALL WEATHER ALL THE TIME</i></q></p>
+                        <div class="form-group row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." id="city">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button" id="getReport">Get It!</button>
+                                  </span>
+                                </div>
+                                <!-- <div id="warning"></div> -->
+                                <div class="alert alert-danger">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detail">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
