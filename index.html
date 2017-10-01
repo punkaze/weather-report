@@ -38,13 +38,13 @@
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." id="city">
+                                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." id="city" onkeypress='return keyEnter(event)'>
                                     <span class="input-group-btn">
                                     <button class="btn btn-primary" type="button" id="getReport">Get It!</button>
                                   </span>
                                 </div>
                                 <!-- <div id="warning"></div> -->
-                                <div class="alert alert-danger">
+                                <div class="alert alert-danger" id="warning">
                                 </div>
                             </div>
                         </div>
